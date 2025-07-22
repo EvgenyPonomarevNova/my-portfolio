@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frontend Dev – Евгений Пономарев</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+<div id="comets-container" style="position:fixed;inset:0;pointer-events:none;z-index:-1;"></div>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="#hero" class="nav__link">Home</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#works" class="nav__link">Works</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" id="hero">
+      <h1 class="hero__title">Front-End Developer</h1>
+      <p class="hero__subtitle">Modern landing pages & WebGL magic</p>
+      <button class="hero__btn" onclick="scrollToSection('contact')">
+        Hire me
+      </button>
+    </header>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <h2 class="section__title">О себе</h2>
+      <div class="about">
+        <img src="./img/Mefoto.jpg" alt="About me" class="about__img" />
+        <div class="about__text">
+          <p>
+            «Привет! Я — Евгений, фронтенд-разработчик с 5-летним опытом.
+            Специализируюсь на создании быстрых, красивых и продающих сайтов для
+            малого и среднего бизнеса. <br />• Технологии: React, Next.js,
+            Three.js, GSAP, SCSS, WebGL. <br />• Скорость: лендинг «под ключ» за
+            24 часа. <br />• Результат: 120+ сайтов, 95 % клиентов возвращаются
+            за обновлениями. <br />Люблю сложные анимации, WebGL-эффекты и
+            креативный дизайн. <br />Готов воплотить любую идею — от
+            минималистичного сайта-визитки до полноценного сайта-магазина.»
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <h2 class="section__title">Мои навыки</h2>
+      <div class="skills">
+        <div class="skill">
+          <div class="skill__title">React</div>
+        </div>
+        <div class="skill">
+          <div class="skill__title">Three.js</div>
+        </div>
+        <div class="skill">
+          <div class="skill__title">GSAP</div>
+        </div>
+        <div class="skill">
+          <div class="skill__title">SCSS</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works -->
+    <section class="section" id="works">
+      <h2 class="section__title">Проекты</h2>
+      <div class="works">
+        <div class="work">
+          <img
+            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=60"
+            alt="Project 1"
+            class="work__img"
+          />
+          <div class="work__body">
+            <h3 class="work__title">Landing SPA</h3>
+            <p class="work__tech">React + GSAP ScrollTrigger</p>
+          </div>
+        </div>
+        <div class="work">
+          <img
+            src="https://images.unsplash.com/photo-1611171518159-0e8b8e2c2e1a?auto=format&fit=crop&w=600&q=60"
+            alt="Project 2"
+            class="work__img"
+          />
+          <div class="work__body">
+            <h3 class="work__title">3D Portfolio</h3>
+            <p class="work__tech">Three.js + WebGL</p>
+          </div>
+        </div>
+        <div class="work">
+          <img
+            src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=600&q=60"
+            alt="Project 3"
+            class="work__img"
+          />
+          <div class="work__body">
+            <h3 class="work__title">E-commerce</h3>
+            <p class="work__tech">Next.js + Framer-motion</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <h2 class="reviews__title">Отзывы</h2>
+
+      <div class="reviews__carousel" id="reviews-carousel">
+        <!-- 10 отзывов -->
+        <div class="review">
+          «Сайт для салона красоты получился выше ожиданий!» — Мария, салон
+          «Beauty»
+        </div>
+        <div class="review">
+          «Сделали лендинг за 1 день — клиенты звонят без остановки.» — Дмитрий
+        </div>
+        <div class="review">
+          «Сайт для курсов ЕГЭ — стильный, лиды идут каждый день.» — Ирина
+        </div>
+        <div class="review">«Просто топ! Дизайн и скорость рекорд.» — Иван</div>
+        <div class="review">«С 3D-фоном — как из будущего.» — Олег</div>
+        <div class="review">«Сайт-визитка для кафе — 5 звёзд!» — Анна</div>
+        <div class="review">«Всё быстро и красиво.» — Сергей</div>
+        <div class="review">«Профессионал!» — Мария</div>
+        <div class="review">«Три дня и готово.» — Павел</div>
+        <div class="review">«WebGL-фон — огонь!» — Елена</div>
+      </div>
+
+      <button
+        class="reviews__arrow reviews__arrow--left"
+        onclick="prevReview()"
+      >
+        ‹
+      </button>
+      <button
+        class="reviews__arrow reviews__arrow--right"
+        onclick="nextReview()"
+      >
+        ›
+      </button>
+    </section>
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <h2 class="section__title">Связаться со мной</h2>
+      <form class="form" action="https://formspree.io/f/YOUR_ID" method="POST">
+        <div class="form__group">
+          <label for="name" class="form__label">Имя</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form__input"
+            placeholder="Your name"
+            required
+          />
+        </div>
+        <div class="form__group">
+          <label for="email" class="form__label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form__input"
+            placeholder="Your email"
+            required
+          />
+        </div>
+        <div class="form__group">
+          <label for="message" class="form__label">Сообщение</label>
+          <textarea
+            id="message"
+            name="message"
+            class="form__textarea"
+            rows="4"
+            placeholder="Your message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="form__btn">Отправить</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__contacts">
+        <a href="mailto:ponomareve45@gmail.com" class="footer__link"
+          >ponomareve45@gmail.com</a
+        >
+        <a href="https://github.com/EvgenyPonomarevNova" class="footer__link"
+          >GitHub</a
+        >
+        <a href="https://linkedin.com/in/yourusername" class="footer__link"
+          >LinkedIn</a
+        >
+      </div>
+      <p class="footer__copy">© 2025 Frontend Dev. Все права защищены.</p>
+    </footer>
+    <!-- летающие частицы -->
+    <div class="particles" id="particles"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
