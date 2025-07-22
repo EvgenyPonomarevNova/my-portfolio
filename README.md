@@ -1,6 +1,6 @@
 # Портфолио Frontend-разработчика
 
-![Превью сайта](https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80)
+![Превью сайта]([https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80](https://github.com/EvgenyPonomarevNova/my-portfolio/blob/master/img/evgenyponomarevnova.github.io_my-portfolio_.png))
 
 Современное портфолио фронтенд-разработчика Евгения Пономарева с интерактивными элементами и анимациями.
 
