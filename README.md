@@ -1,6 +1,7 @@
 # Портфолио Frontend-разработчика
 
-![Превью сайта]([https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80](https://github.com/EvgenyPonomarevNova/my-portfolio/blob/master/img/evgenyponomarevnova.github.io_my-portfolio_.png))
+![Превью сайта]<img width="3558" height="9690" alt="evgenyponomarevnova github io_my-portfolio_" src="https://github.com/user-attachments/assets/94f49657-ef05-4e36-9005-f72121167aae" />
+
 
 Современное портфолио фронтенд-разработчика Евгения Пономарева с интерактивными элементами и анимациями.
 
