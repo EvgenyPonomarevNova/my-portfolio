@@ -14,8 +14,7 @@
       <a href="#hero" class="nav__link">Home</a>
       <a href="#about" class="nav__link">About</a>
       <a href="#skills" class="nav__link">Skills</a>
-      <a href="#projects" class="nav__link">Проекты</a>
-      <a href="#works" class="nav__link">Works</a>
+      <a href="#projects" class="nav__link">Projects</a>
       <a href="#contact" class="nav__link">Contact</a>
     </nav>
 
@@ -52,21 +51,145 @@
     <section class="section" id="skills">
       <h2 class="section__title">Мои навыки</h2>
       <div class="skills">
-        <div class="skill">
-          <div class="skill__title">React</div>
+        <div class="skill-category">
+          <h3 class="skill-category__title">Frontend</h3>
+          <div class="skills-grid">
+            <a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank" class="skill">
+              <div class="skill-content">
+                <i class="fab fa-html5"></i>
+                <div class="skill__title">HTML5</div>
+              </div>
+              <div class="skill-tooltip">
+                <p>Язык разметки для создания структуры веб-страниц</p>
+                <span class="tooltip-link">Перейти на документацию →</span>
+              </div>
+            </a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/CSS" target="_blank" class="skill">
+              <div class="skill-content">
+                <i class="fab fa-css3-alt"></i>
+                <div class="skill__title">CSS3</div>
+              </div>
+              <div class="skill-tooltip">
+                <p>Стилизация и оформление веб-страниц, анимации</p>
+                <span class="tooltip-link">Перейти на документацию →</span>
+              </div>
+            </a>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript" target="_blank" class="skill">
+              <div class="skill-content">
+                <i class="fab fa-js"></i>
+                <div class="skill__title">JavaScript</div>
+              </div>
+              <div class="skill-tooltip">
+                <p>Язык программирования для интерактивности на сайте</p>
+                <span class="tooltip-link">Перейти на документацию →</span>
+              </div>
+            </a>
+            <a href="https://react.dev/" target="_blank" class="skill">
+              <div class="skill-content">
+                <i class="fab fa-react"></i>
+                <div class="skill__title">React</div>
+              </div>
+              <div class="skill-tooltip">
+                <p>Библиотека для создания пользовательских интерфейсов</p>
+                <span class="tooltip-link">Перейти на документацию →</span>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="skill">
-          <div class="skill__title">Three.js</div>
+
+        <div class="skill-category">
+          <h3 class="skill-category__title">Tools & Libraries</h3>
+          <div class="skills-grid">
+            <a href="https://git-scm.com/" target="_blank" class="skill">
+              <div class="skill-content">
+                <i class="fab fa-git-alt"></i>
+                <div class="skill__title">Git</div>
+              </div>
+              <div class="skill-tooltip">
+                <p>Система контроля версий для отслеживания изменений в коде</p>
+                <span class="tooltip-link">Перейти на документацию →</span>
+              </div>
+            </a>
+            <a href="https://sass-lang.com/" target="_blank" class="skill">
+              <div class="skill-content">
+                <i class="fab fa-sass"></i>
+                <div class="skill__title">SASS/SCSS</div>
+              </div>
+              <div class="skill-tooltip">
+                <p>Препроцессор CSS с переменными, миксинами и вложенностью</p>
+                <span class="tooltip-link">Перейти на документацию →</span>
+              </div>
+            </a>
+            <a href="https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank" class="skill">
+              <div class="skill-content">
+                <i class="fas fa-mobile-alt"></i>
+                <div class="skill__title">Responsive Design</div>
+              </div>
+              <div class="skill-tooltip">
+                <p>Адаптация сайта под разные устройства и экраны</p>
+                <span class="tooltip-link">Перейти на документацию →</span>
+              </div>
+            </a>
+            <a href="https://getbootstrap.com/" target="_blank" class="skill">
+              <div class="skill-content">
+                <i class="fas fa-wind"></i>
+                <div class="skill__title">Bootstrap</div>
+              </div>
+              <div class="skill-tooltip">
+                <p>CSS-фреймворк для быстрой разработки адаптивных сайтов</p>
+                <span class="tooltip-link">Перейти на документацию →</span>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="skill">
-          <div class="skill__title">GSAP</div>
-        </div>
-        <div class="skill">
-          <div class="skill__title">SCSS</div>
+
+        <div class="skill-category">
+          <h3 class="skill-category__title">Currently Learning</h3>
+          <div class="skills-grid">
+            <a href="https://nodejs.org/" target="_blank" class="skill">
+              <div class="skill-content">
+                <i class="fab fa-node-js"></i>
+                <div class="skill__title">Node.js</div>
+              </div>
+              <div class="skill-tooltip">
+                <p>Среда выполнения JavaScript на стороне сервера</p>
+                <span class="tooltip-link">Перейти на документацию →</span>
+              </div>
+            </a>
+            <a href="https://www.mongodb.com/" target="_blank" class="skill">
+              <div class="skill-content">
+                <i class="fas fa-database"></i>
+                <div class="skill__title">MongoDB</div>
+              </div>
+              <div class="skill-tooltip">
+                <p>NoSQL база данных для хранения данных в документах</p>
+                <span class="tooltip-link">Перейти на документацию →</span>
+              </div>
+            </a>
+            <a href="https://www.python.org/" target="_blank" class="skill">
+              <div class="skill-content">
+                <i class="fab fa-python"></i>
+                <div class="skill__title">Python</div>
+              </div>
+              <div class="skill-tooltip">
+                <p>Универсальный язык программирования для веба и данных</p>
+                <span class="tooltip-link">Перейти на документацию →</span>
+              </div>
+            </a>
+            <a href="https://www.figma.com/ui-design/" target="_blank" class="skill">
+              <div class="skill-content">
+                <i class="fas fa-paint-brush"></i>
+                <div class="skill__title">UI/UX Design</div>
+              </div>
+              <div class="skill-tooltip">
+                <p>Дизайн интерфейсов и пользовательского опыта</p>
+                <span class="tooltip-link">Перейти на документацию →</span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
-
     <!-- Projects -->
     <section class="section" id="projects">
       <h2 class="section__title">Мои проекты</h2>
@@ -78,7 +201,7 @@
             <div class="project-overlay">
               <div class="project-links">
                 <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/EvgenyPonomarevjs" class="project-link"><i class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -96,17 +219,17 @@
         <!-- Проект 2 -->
         <div class="project-card">
           <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1611171518159-0e8b8e2c2e1a?auto=format&fit=crop&w=600&q=60" alt="E-commerce Platform" />
+            <img src="/img/project 2.jpg" alt="E-commerce Platform" />
             <div class="project-overlay">
               <div class="project-links">
                 <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/EvgenyPonomarevjs" class="project-link"><i class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
           <div class="project-content">
             <h3 class="project-title">E-commerce Platform</h3>
-            <p class="project-description">Полнофункциональная платформа для интернет-магазина с адаптивным дизайном</p>
+            <p class="project-description">Полнофункциональный интернет-магазина с адаптивным дизайном</p>
             <div class="project-tech">
               <span class="tech-tag">React</span>
               <span class="tech-tag">Next.js</span>
@@ -122,7 +245,7 @@
             <div class="project-overlay">
               <div class="project-links">
                 <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/EvgenyPonomarevjs" class="project-link"><i class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -140,21 +263,63 @@
         <!-- Проект 4 -->
         <div class="project-card">
           <div class="project-image">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=60" alt="Mobile App" />
+            <img src="/img/project 4.jpg" alt="Mobile App" />
             <div class="project-overlay">
               <div class="project-links">
                 <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/EvgenyPonomarevjs" class="project-link"><i class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
           <div class="project-content">
-            <h3 class="project-title">Fitness Mobile App</h3>
-            <p class="project-description">Кроссплатформенное приложение для тренировок с трекингом прогресса</p>
+            <h3 class="project-title">Fitness center landing page</h3>
+            <p class="project-description">Кроссплатформенное лендинг фитнес-центра</p>
             <div class="project-tech">
-              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">Javascript</span>
               <span class="tech-tag">Firebase</span>
-              <span class="tech-tag">Redux</span>
+              <span class="tech-tag">SCSS</span>
+            </div>
+          </div>
+        </div>
+      <!-- Проект 5 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="/img/project 5.png" alt="Mobile App" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://evgenyponomarevnova.github.io/sushibar-landing-page/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/EvgenyPonomarevNova" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Sushi cafe landing</h3>
+            <p class="project-description">Кроссплатформенное лендинг суши кафе за 24 часа</p>
+            <div class="project-tech">
+              <span class="tech-tag">Javascript</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">SCSS</span>
+            </div>
+          </div>
+        </div>
+      <!-- Проект 6 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="/img/project 6.png" alt="Mobile App" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://evgenyponomarevnova.github.io/barbershop-landing/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/EvgenyPonomarevNova" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">barbershop landing page</h3>
+            <p class="project-description">Кроссплатформенное лендинг барбершопа за 24 часа</p>
+            <div class="project-tech">
+              <span class="tech-tag">Javascript</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">SCSS</span>
             </div>
           </div>
         </div>
@@ -170,12 +335,13 @@
           «Beauty»
         </div>
         <div class="review">
-          «Сделали лендинг за 1 день — клиенты звонят без остановки.» — Дмитрий
+          «Сделали лендинг за 1 день — быстро и качественно.» — Дмитрий
         </div>
         <div class="review">
-          «Сайт для курсов ЕГЭ — стильный, лиды идут каждый день.» — Ирина
+          «Сайт для курсов ЕГЭ — стильный, лиды идут.» — Ирина
         </div>
         <div class="review">«Просто топ! Дизайн и скорость рекорд.» — Иван</div>
+        <div class="review">«Сделал сайт для нашего фитнес-центра быстро и качественно.» — Спортивный клуб "Экстрим"</div>
         <div class="review">«С 3D-фоном — как из будущего.» — Олег</div>
         <div class="review">«Сайт-визитка для кафе — 5 звёзд!» — Анна</div>
         <div class="review">«Всё быстро и красиво.» — Сергей</div>
@@ -249,6 +415,9 @@
         >
         <a href="https://linkedin.com/in/yourusername" class="footer__link"
           >LinkedIn</a
+        >
+        <a href="https://msngr.link/tg/@Jonnnms" class="footer__link"
+          >Telegram</a
         >
       </div>
       <p class="footer__copy">© 2025 Frontend Dev. Все права защищены.</p>
