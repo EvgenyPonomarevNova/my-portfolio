@@ -5,6 +5,7 @@
     <title>Frontend Dev – Евгений Пономарев</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
 <div id="comets-container" style="position:fixed;inset:0;pointer-events:none;z-index:-1;"></div>
@@ -13,6 +14,7 @@
       <a href="#hero" class="nav__link">Home</a>
       <a href="#about" class="nav__link">About</a>
       <a href="#skills" class="nav__link">Skills</a>
+      <a href="#projects" class="nav__link">Проекты</a>
       <a href="#works" class="nav__link">Works</a>
       <a href="#contact" class="nav__link">Contact</a>
     </nav>
@@ -33,11 +35,11 @@
         <img src="./img/Mefoto.jpg" alt="About me" class="about__img" />
         <div class="about__text">
           <p>
-            «Привет! Я — Евгений, фронтенд-разработчик с 5-летним опытом.
+            «Привет! Я — Евгений, фронтенд-разработчик с 3-летним опытом.
             Специализируюсь на создании быстрых, красивых и продающих сайтов для
             малого и среднего бизнеса. <br />• Технологии: React, Next.js,
             Three.js, GSAP, SCSS, WebGL. <br />• Скорость: лендинг «под ключ» за
-            24 часа. <br />• Результат: 120+ сайтов, 95 % клиентов возвращаются
+            24 часа. <br />• Результат: 50+ сайтов, 95 % клиентов возвращаются
             за обновлениями. <br />Люблю сложные анимации, WebGL-эффекты и
             креативный дизайн. <br />Готов воплотить любую идею — от
             минималистичного сайта-визитки до полноценного сайта-магазина.»
@@ -65,46 +67,99 @@
       </div>
     </section>
 
-    <!-- Works -->
-    <section class="section" id="works">
-      <h2 class="section__title">Проекты</h2>
-      <div class="works">
-        <div class="work">
-          <img
-            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=60"
-            alt="Project 1"
-            class="work__img"
-          />
-          <div class="work__body">
-            <h3 class="work__title">Landing SPA</h3>
-            <p class="work__tech">React + GSAP ScrollTrigger</p>
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <h2 class="section__title">Мои проекты</h2>
+      <div class="projects">
+        <!-- Проект 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=60" alt="WebGL Portfolio" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">3D Portfolio Website</h3>
+            <p class="project-description">Интерактивное портфолио с WebGL-графикой и плавными анимациями на Three.js</p>
+            <div class="project-tech">
+              <span class="tech-tag">Three.js</span>
+              <span class="tech-tag">GSAP</span>
+              <span class="tech-tag">WebGL</span>
+            </div>
           </div>
         </div>
-        <div class="work">
-          <img
-            src="https://images.unsplash.com/photo-1611171518159-0e8b8e2c2e1a?auto=format&fit=crop&w=600&q=60"
-            alt="Project 2"
-            class="work__img"
-          />
-          <div class="work__body">
-            <h3 class="work__title">3D Portfolio</h3>
-            <p class="work__tech">Three.js + WebGL</p>
+
+        <!-- Проект 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1611171518159-0e8b8e2c2e1a?auto=format&fit=crop&w=600&q=60" alt="E-commerce Platform" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">E-commerce Platform</h3>
+            <p class="project-description">Полнофункциональная платформа для интернет-магазина с адаптивным дизайном</p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">SCSS</span>
+            </div>
           </div>
         </div>
-        <div class="work">
-          <img
-            src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=600&q=60"
-            alt="Project 3"
-            class="work__img"
-          />
-          <div class="work__body">
-            <h3 class="work__title">E-commerce</h3>
-            <p class="work__tech">Next.js + Framer-motion</p>
+
+        <!-- Проект 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=600&q=60" alt="Business Dashboard" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Business Analytics Dashboard</h3>
+            <p class="project-description">Панель управления с интерактивными графиками и реальными метриками</p>
+            <div class="project-tech">
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">D3.js</span>
+              <span class="tech-tag">TypeScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Проект 4 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=60" alt="Mobile App" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Fitness Mobile App</h3>
+            <p class="project-description">Кроссплатформенное приложение для тренировок с трекингом прогресса</p>
+            <div class="project-tech">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Redux</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
     <section class="reviews">
       <h2 class="reviews__title">Отзывы</h2>
 
