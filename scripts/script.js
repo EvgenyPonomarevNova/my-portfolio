@@ -1,13 +1,76 @@
+/* ---------- фиксированная навигация с фоном ---------- */
+window.addEventListener('scroll', function() {
+  const nav = document.querySelector('.nav');
+  const scrollPosition = window.scrollY;
+  
+  if (scrollPosition > 100) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+  
+  // Подсветка активного раздела (опционально)
+  highlightActiveSection();
+});
+
+function highlightActiveSection() {
+  const sections = document.querySelectorAll('section, header');
+  const navLinks = document.querySelectorAll('.nav__link');
+  
+  let current = '';
+  const scrollPosition = window.scrollY + 100;
+  
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    
+    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      current = section.getAttribute('id');
+    }
+  });
+  
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === `#${current}`) {
+      link.classList.add('active');
+    }
+  });
+}
+
 /* ---------- плавная прокрутка ---------- */
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const target = document.querySelector(link.getAttribute('href'));
-    if (!target) return;
-    target.scrollIntoView({ behavior: 'smooth' });
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.nav__link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const target = document.querySelector(targetId);
+      
+      if (target) {
+        const offset = 80;
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
   });
 });
 
+// Функция для кнопки "Hire me"
+function scrollToSection(sectionId) {
+  const target = document.getElementById(sectionId);
+  if (target) {
+    const offset = 80;
+    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+    
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth'
+    });
+  }
+}
 /* ---------- GSAP-анимация появления ---------- */
 gsap.registerPlugin(ScrollTrigger);
 
