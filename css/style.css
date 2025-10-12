@@ -417,6 +417,7 @@ body::before {
   width: 100%;
   object-fit: cover; /* Важно: заполняет весь блок без искажений */
   transition: transform 0.3s ease;
+  height: 213px;
 }
 
 .project-card:hover .project-image img {
