@@ -1,6 +1,6 @@
 # Портфолио Frontend-разработчика
 
-![Превью сайта]<img width="3558" height="9690" alt="evgenyponomarevnova github io_my-portfolio_" src="/img/127.0.0.1_5500_index.html (1).png" />
+![Превью сайта]<img width="3558" height="9690" alt="evgenyponomarevnova github io_my-portfolio_" src="/img/portfolio.png" />
 
 
 Современное портфолио фронтенд-разработчика Евгения Пономарева с интерактивными элементами и анимациями.
